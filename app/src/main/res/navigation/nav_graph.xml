@@ -15,5 +15,13 @@
     <fragment
         android:id="@+id/smsFragment"
         android:name="com.example.fifthapplication.fragments.SmsFragment"
-        android:label="SmsFragment" />
+        android:label="SmsFragment" >
+        <action
+            android:id="@+id/action_smsFragment_to_profileInfo"
+            app:destination="@id/profileInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileInfo"
+        android:name="com.example.fifthapplication.fragments.ProfileInfo"
+        android:label="ProfileInfo" />
 </navigation>

@@ -24,7 +24,7 @@
         android:layout_height="64dp"
         android:backgroundTint="#B46DAE"
         android:padding="5dp"
-        android:text="Continue"
+        android:text="Submit"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
