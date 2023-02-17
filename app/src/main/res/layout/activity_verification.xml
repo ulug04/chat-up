@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:gravity="center_horizontal"
-    tools:context=".VerificationActivity">
+    android:gravity="center_horizontal">
 
     <ImageView
         android:src="@drawable/wing"
