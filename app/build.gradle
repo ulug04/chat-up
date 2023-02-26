@@ -4,6 +4,9 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding = true
+    }
     namespace 'com.example.fifthapplication'
     compileSdk 32
 
@@ -52,5 +55,9 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     implementation "com.github.fraggjkee:sms-confirmation-view:1.7.1"
+
+    // sms
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
 
 }

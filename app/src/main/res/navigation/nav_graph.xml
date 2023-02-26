@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/phoneFragment">
+    app:startDestination="@id/registerFragment">
 
     <fragment
         android:id="@+id/phoneFragment"
@@ -23,5 +23,14 @@
     <fragment
         android:id="@+id/profileInfo"
         android:name="com.example.fifthapplication.fragments.ProfileInfo"
-        android:label="ProfileInfo" />
+        android:label="ProfileInfo" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.fifthapplication.fragments.RegisterFragment"
+        android:label="RegisterFragment" />
+
+
+
 </navigation>
