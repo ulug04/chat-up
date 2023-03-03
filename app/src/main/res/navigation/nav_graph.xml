@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/passLogin">
 
     <fragment
         android:id="@+id/phoneFragment"
@@ -29,8 +29,19 @@
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.fifthapplication.fragments.RegisterFragment"
-        android:label="RegisterFragment" />
-
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_passLogin"
+            app:destination="@id/passLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/passLogin"
+        android:name="com.example.fifthapplication.fragments.PassLogin"
+        android:label="PassLogin" >
+        <action
+            android:id="@+id/action_passLogin_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
 
 
 </navigation>
