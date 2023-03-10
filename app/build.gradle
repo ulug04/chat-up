@@ -62,4 +62,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
     implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
 
+    //Groupie
+    implementation "com.github.lisawray.groupie:groupie:2.10.1"
+    implementation "com.github.lisawray.groupie:groupie-viewbinding:2.10.1"
+
 }
