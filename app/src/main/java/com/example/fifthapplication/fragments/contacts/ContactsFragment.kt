@@ -9,7 +9,6 @@ import com.example.fifthapplication.R
 import com.example.fifthapplication.databinding.ContactFragmentBinding
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import com.xwray.groupie.GroupieAdapter
 
 
 class ContactsFragment: Fragment (R.layout.contact_fragment) {
@@ -41,26 +40,27 @@ class ContactsFragment: Fragment (R.layout.contact_fragment) {
 
 
 
-
-        val animal1 = Animal(id = 1, name = "Kenguru", legs = 2)
-        val animal2= Animal(id = 2, name = "Dog", legs = 4)
-        val animal3 = Animal(id = 3, name = "Fish", legs = 0)
-
+        val member1 = Members(id = 1, name = "Kenguru", legs = 2)
+        val member2 = Members(id = 2, name = "Dog", legs = 4)
+        val member3 = Members(id = 3, name = "Fish", legs = 0)
 
 
-        writeNewUser(animal1)
-        writeNewUser(animal2)
-        writeNewUser(animal3)
+
+        writeNewUser(member1)
+        writeNewUser(member2)
+        writeNewUser(member3)
 
     }
 
 
-     private fun writeNewUser(animal:Animal) {
+     private fun writeNewUser(animal:Members) {
 
-        database.child("animals").child(animal.name).setValue(animal.legs)
+        database.child("chats").child("group1").setValue(animal.legs)
+
+
     }
 
-    data class Animal(
+    data class Members(
         val id: Int,
         val name: String,
         val legs: Int
